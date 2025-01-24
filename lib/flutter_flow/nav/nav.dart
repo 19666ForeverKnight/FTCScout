@@ -75,18 +75,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const HomePageWidget() : const SigninWidget(),
+          appStateNotifier.loggedIn ? const HomeWidget() : const SigninWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const HomePageWidget() : const SigninWidget(),
+              appStateNotifier.loggedIn ? const HomeWidget() : const SigninWidget(),
         ),
         FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
-          builder: (context, params) => const HomePageWidget(),
+          name: 'home',
+          path: '/home',
+          builder: (context, params) => const HomeWidget(),
         ),
         FFRoute(
           name: 'signup',
