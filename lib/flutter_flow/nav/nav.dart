@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
@@ -97,6 +98,146 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'signin',
           path: '/signin',
           builder: (context, params) => const SigninWidget(),
+        ),
+        FFRoute(
+          name: 'addevent',
+          path: '/addevent',
+          requireAuth: true,
+          builder: (context, params) => const AddeventWidget(),
+        ),
+        FFRoute(
+          name: 'addmatchscout',
+          path: '/addmatchscout',
+          builder: (context, params) => AddmatchscoutWidget(
+            eventid: params.getParam(
+              'eventid',
+              ParamType.int,
+            ),
+            eventname: params.getParam(
+              'eventname',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'compscouthome',
+          path: '/compscouthome',
+          requireAuth: true,
+          builder: (context, params) => CompscouthomeWidget(
+            eventid: params.getParam(
+              'eventid',
+              ParamType.int,
+            ),
+            eventname: params.getParam(
+              'eventname',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'pitscouthome',
+          path: '/pitscouthome',
+          requireAuth: true,
+          builder: (context, params) => PitscouthomeWidget(
+            eventid: params.getParam(
+              'eventid',
+              ParamType.int,
+            ),
+            eventname: params.getParam(
+              'eventname',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'editmatchscout',
+          path: '/editmatchscout',
+          builder: (context, params) => EditmatchscoutWidget(
+            eventid: params.getParam(
+              'eventid',
+              ParamType.int,
+            ),
+            eventname: params.getParam(
+              'eventname',
+              ParamType.String,
+            ),
+            compscoutid: params.getParam(
+              'compscoutid',
+              ParamType.int,
+            ),
+            alliencecolor: params.getParam(
+              'alliencecolor',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'addpitsout',
+          path: '/addpitsout',
+          builder: (context, params) => AddpitsoutWidget(
+            eventid: params.getParam(
+              'eventid',
+              ParamType.int,
+            ),
+            eventname: params.getParam(
+              'eventname',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'editpitsout',
+          path: '/editpitsout',
+          builder: (context, params) => EditpitsoutWidget(
+            eventid: params.getParam(
+              'eventid',
+              ParamType.int,
+            ),
+            eventname: params.getParam(
+              'eventname',
+              ParamType.String,
+            ),
+            pitscoutid: params.getParam(
+              'pitscoutid',
+              ParamType.int,
+            ),
+            pictureurl: params.getParam(
+              'pictureurl',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'teamdetails',
+          path: '/teamdetails',
+          builder: (context, params) => TeamdetailsWidget(
+            eventid: params.getParam(
+              'eventid',
+              ParamType.int,
+            ),
+            eventname: params.getParam(
+              'eventname',
+              ParamType.String,
+            ),
+            pitscoutid: params.getParam(
+              'pitscoutid',
+              ParamType.int,
+            ),
+            pictureurl: params.getParam(
+              'pictureurl',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'updatepassword',
+          path: '/updatepassword',
+          builder: (context, params) => const UpdatepasswordWidget(),
+        ),
+        FFRoute(
+          name: 'about',
+          path: '/about',
+          builder: (context, params) => const AboutWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

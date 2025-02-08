@@ -29,6 +29,8 @@ class _SigninWidgetState extends State<SigninWidget> {
 
     _model.passwordTextController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -439,11 +441,12 @@ class _SigninWidgetState extends State<SigninWidget> {
                   ),
                 ),
               ),
-              if (responsiveVisibility(
-                context: context,
-                phone: false,
-                tablet: false,
-              ))
+              if (false &&
+                  responsiveVisibility(
+                    context: context,
+                    phone: false,
+                    tablet: false,
+                  ))
                 Expanded(
                   flex: 8,
                   child: Padding(

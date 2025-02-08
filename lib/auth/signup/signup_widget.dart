@@ -32,6 +32,8 @@ class _SignupWidgetState extends State<SignupWidget> {
 
     _model.passwordConfirmTextController ??= TextEditingController();
     _model.passwordConfirmFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -561,11 +563,12 @@ class _SignupWidgetState extends State<SignupWidget> {
                   ),
                 ),
               ),
-              if (responsiveVisibility(
-                context: context,
-                phone: false,
-                tablet: false,
-              ))
+              if (false &&
+                  responsiveVisibility(
+                    context: context,
+                    phone: false,
+                    tablet: false,
+                  ))
                 Expanded(
                   flex: 8,
                   child: Padding(
