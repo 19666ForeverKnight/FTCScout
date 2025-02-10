@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'home_model.dart';
 export 'home_model.dart';
@@ -557,6 +558,46 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             ParamType.String,
                                                           ),
                                                         }.withoutNulls,
+                                                      );
+                                                    },
+                                                    onDoubleTap: () async {
+                                                      var confirmDialogResponse =
+                                                          await showDialog<
+                                                                  bool>(
+                                                                context:
+                                                                    context,
+                                                                builder:
+                                                                    (alertDialogContext) {
+                                                                  return AlertDialog(
+                                                                    title: const Text(
+                                                                        'Do you want to pull all match data according to event code?'),
+                                                                    actions: [
+                                                                      TextButton(
+                                                                        onPressed: () => Navigator.pop(
+                                                                            alertDialogContext,
+                                                                            false),
+                                                                        child: const Text(
+                                                                            'Cancel'),
+                                                                      ),
+                                                                      TextButton(
+                                                                        onPressed: () => Navigator.pop(
+                                                                            alertDialogContext,
+                                                                            true),
+                                                                        child: const Text(
+                                                                            'Confirm'),
+                                                                      ),
+                                                                    ],
+                                                                  );
+                                                                },
+                                                              ) ??
+                                                              false;
+                                                      await actions
+                                                          .fetchAndInsertMatches(
+                                                        myeventslistItem
+                                                            .eventcode!,
+                                                        myeventslistItem.id,
+                                                        currentUserUid,
+                                                        currentUserEmail,
                                                       );
                                                     },
                                                     onLongPress: () async {

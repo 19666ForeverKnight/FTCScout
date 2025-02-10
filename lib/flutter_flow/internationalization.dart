@@ -515,6 +515,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Matches',
       'zh_Hans': '比赛',
     },
+    'zc3lyyy6': {
+      'en': 'Export',
+      'zh_Hans': '+ 添加',
+    },
     '7hdjv6ut': {
       'en': '+ Add',
       'zh_Hans': '+ 添加',
