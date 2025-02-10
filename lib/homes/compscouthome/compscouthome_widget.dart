@@ -103,7 +103,7 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                           Expanded(
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  20.0, 0.0, 20.0, 0.0),
+                                  20.0, 10.0, 20.0, 10.0),
                               child: Container(
                                 width: double.infinity,
                                 height: 100.0,
@@ -155,7 +155,10 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                             alignment: const AlignmentDirectional(
                                                 -1.0, -1.0),
                                             child: Text(
-                                              'Matches',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '5fgj2mix' /* Matches */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
@@ -193,7 +196,11 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                     }.withoutNulls,
                                                   );
                                                 },
-                                                text: '+ Add',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  '7hdjv6ut' /* + Add */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   width: 80.0,
                                                   height: 40.0,
@@ -290,7 +297,11 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                                         0.0,
                                                                   ),
                                                           hintText:
-                                                              'Team number',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                            'jclcn62b' /* Team number */,
+                                                          ),
                                                           hintStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -416,12 +427,28 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                         FormFieldController<
                                                             String>(
                                                       _model.dropDownValue1 ??=
-                                                          'None',
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                        '6sfcp9av' /* None */,
+                                                      ),
                                                     ),
-                                                    options: const [
-                                                      'None',
-                                                      'Auto',
-                                                      'Teleop'
+                                                    options: [
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '9fw3ngnu' /* None */,
+                                                      ),
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'v7s2jqin' /* Auto */,
+                                                      ),
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '4rfjws3m' /* Teleop */,
+                                                      )
                                                     ],
                                                     onChanged: (val) =>
                                                         safeSetState(() => _model
@@ -436,7 +463,12 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                           fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
-                                                    hintText: 'Sort Types',
+                                                    hintText:
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                      'b45t4v22' /* Sort Types */,
+                                                    ),
                                                     icon: Icon(
                                                       Icons
                                                           .keyboard_arrow_down_rounded,
@@ -477,11 +509,23 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                         FormFieldController<
                                                             String>(
                                                       _model.dropDownValue2 ??=
-                                                          'Descending',
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                        'hxp0jgno' /* Descending */,
+                                                      ),
                                                     ),
-                                                    options: const [
-                                                      'Ascending',
-                                                      'Descending'
+                                                    options: [
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '6q52sles' /* Ascending */,
+                                                      ),
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'h80v9qfu' /* Descending */,
+                                                      )
                                                     ],
                                                     onChanged: (val) =>
                                                         safeSetState(() => _model
@@ -496,7 +540,12 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                           fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
-                                                    hintText: 'Sort Direction',
+                                                    hintText:
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                      '289m78ki' /* Sort Direction */,
+                                                    ),
                                                     icon: Icon(
                                                       Icons
                                                           .keyboard_arrow_down_rounded,
@@ -545,6 +594,7 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                         _model.dropDownValue1,
                                                         _model.dropDownValue2),
                                                 uuid: currentUserUid,
+                                                eventid: widget.eventid,
                                               ),
                                               builder: (context, snapshot) {
                                                 // Customize what your widget looks like when it's loading.
@@ -647,6 +697,33 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                                     ).toString(),
                                                                     ParamType
                                                                         .String,
+                                                                  ),
+                                                                  'total':
+                                                                      serializeParam(
+                                                                    getJsonField(
+                                                                      matchlistItem,
+                                                                      r'''$.total''',
+                                                                    ),
+                                                                    ParamType
+                                                                        .int,
+                                                                  ),
+                                                                  'autot':
+                                                                      serializeParam(
+                                                                    getJsonField(
+                                                                      matchlistItem,
+                                                                      r'''$.autototal''',
+                                                                    ),
+                                                                    ParamType
+                                                                        .int,
+                                                                  ),
+                                                                  'teleoptotal':
+                                                                      serializeParam(
+                                                                    getJsonField(
+                                                                      matchlistItem,
+                                                                      r'''$.teleoptotal''',
+                                                                    ),
+                                                                    ParamType
+                                                                        .int,
                                                                   ),
                                                                 }.withoutNulls,
                                                               );
@@ -765,10 +842,14 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                                             0.0),
                                                                         child:
                                                                             Text(
-                                                                          getJsonField(
-                                                                            matchlistItem,
-                                                                            r'''$.compnum''',
-                                                                          ).toString(),
+                                                                          valueOrDefault<
+                                                                              String>(
+                                                                            getJsonField(
+                                                                              matchlistItem,
+                                                                              r'''$.compnum''',
+                                                                            )?.toString(),
+                                                                            'null',
+                                                                          ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
@@ -783,10 +864,14 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                                     Flexible(
                                                                       child:
                                                                           Text(
-                                                                        getJsonField(
-                                                                          matchlistItem,
-                                                                          r'''$.teamnumber''',
-                                                                        ).toString(),
+                                                                        valueOrDefault<
+                                                                            String>(
+                                                                          getJsonField(
+                                                                            matchlistItem,
+                                                                            r'''$.teamnumber''',
+                                                                          )?.toString(),
+                                                                          'null',
+                                                                        ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
@@ -833,6 +918,95 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                                               BorderRadius.circular(24.0),
                                                                         ),
                                                                       ),
+                                                                    ),
+                                                                    Row(
+                                                                      mainAxisSize:
+                                                                          MainAxisSize
+                                                                              .max,
+                                                                      children: [
+                                                                        Text(
+                                                                          valueOrDefault<
+                                                                              String>(
+                                                                            getJsonField(
+                                                                              matchlistItem,
+                                                                              r'''$.total''',
+                                                                            )?.toString(),
+                                                                            'null',
+                                                                          ),
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Inter',
+                                                                                fontSize: 18.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.normal,
+                                                                              ),
+                                                                        ),
+                                                                        Text(
+                                                                          FFLocalizations.of(context)
+                                                                              .getText(
+                                                                            '2v728do7' /* - */,
+                                                                          ),
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Inter',
+                                                                                fontSize: 18.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.normal,
+                                                                              ),
+                                                                        ),
+                                                                        Text(
+                                                                          valueOrDefault<
+                                                                              String>(
+                                                                            getJsonField(
+                                                                              matchlistItem,
+                                                                              r'''$.autototal''',
+                                                                            )?.toString(),
+                                                                            'null',
+                                                                          ),
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Inter',
+                                                                                fontSize: 18.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.normal,
+                                                                              ),
+                                                                        ),
+                                                                        Text(
+                                                                          FFLocalizations.of(context)
+                                                                              .getText(
+                                                                            'kf6njvf9' /* - */,
+                                                                          ),
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Inter',
+                                                                                fontSize: 18.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.normal,
+                                                                              ),
+                                                                        ),
+                                                                        Text(
+                                                                          valueOrDefault<
+                                                                              String>(
+                                                                            getJsonField(
+                                                                              matchlistItem,
+                                                                              r'''$.teleoptotal''',
+                                                                            )?.toString(),
+                                                                            'null',
+                                                                          ),
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Inter',
+                                                                                fontSize: 18.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.normal,
+                                                                              ),
+                                                                        ),
+                                                                      ],
                                                                     ),
                                                                     Flexible(
                                                                       child:
@@ -908,7 +1082,7 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                       alignment: const AlignmentDirectional(0.0, 1.0),
                       child: Padding(
                         padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 10.0, 0.0),
+                            10.0, 0.0, 10.0, 10.0),
                         child: Container(
                           width: double.infinity,
                           height: 50.0,
@@ -947,7 +1121,9 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 0.0, 0.0),
                                         child: Text(
-                                          'COMP',
+                                          FFLocalizations.of(context).getText(
+                                            'zwce6rf7' /* COMP */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -1017,7 +1193,9 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 0.0, 0.0),
                                           child: Text(
-                                            'PIT',
+                                            FFLocalizations.of(context).getText(
+                                              'apmpo4l5' /* PIT */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(

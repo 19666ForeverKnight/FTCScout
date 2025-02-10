@@ -151,6 +151,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'editmatchscout',
           path: '/editmatchscout',
+          requireAuth: true,
           builder: (context, params) => EditmatchscoutWidget(
             eventid: params.getParam(
               'eventid',
@@ -167,6 +168,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             alliencecolor: params.getParam(
               'alliencecolor',
               ParamType.String,
+            ),
+            total: params.getParam(
+              'total',
+              ParamType.int,
+            ),
+            autot: params.getParam(
+              'autot',
+              ParamType.int,
+            ),
+            teleoptotal: params.getParam(
+              'teleoptotal',
+              ParamType.int,
             ),
           ),
         ),

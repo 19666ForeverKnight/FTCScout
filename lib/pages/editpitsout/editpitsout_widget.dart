@@ -120,7 +120,7 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              20.0, 0.0, 20.0, 0.0),
+                              20.0, 10.0, 20.0, 10.0),
                           child: Container(
                             width: double.infinity,
                             height: 100.0,
@@ -137,9 +137,59 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                   children: [
                                     Align(
                                       alignment:
+                                          const AlignmentDirectional(-1.0, -1.0),
+                                      child: InkWell(
+                                        splashColor: Colors.transparent,
+                                        focusColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        onTap: () async {
+                                          context.pushNamed(
+                                            'teamdetails',
+                                            queryParameters: {
+                                              'eventid': serializeParam(
+                                                widget.eventid,
+                                                ParamType.int,
+                                              ),
+                                              'eventname': serializeParam(
+                                                widget.eventname,
+                                                ParamType.String,
+                                              ),
+                                              'pitscoutid': serializeParam(
+                                                widget.pitscoutid,
+                                                ParamType.int,
+                                              ),
+                                              'pictureurl': serializeParam(
+                                                widget.pictureurl,
+                                                ParamType.String,
+                                              ),
+                                            }.withoutNulls,
+                                            extra: <String, dynamic>{
+                                              kTransitionInfoKey:
+                                                  const TransitionInfo(
+                                                hasTransition: true,
+                                                transitionType:
+                                                    PageTransitionType
+                                                        .leftToRight,
+                                              ),
+                                            },
+                                          );
+                                        },
+                                        child: Icon(
+                                          Icons.arrow_back,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          size: 30.0,
+                                        ),
+                                      ),
+                                    ),
+                                    Align(
+                                      alignment:
                                           const AlignmentDirectional(-1.0, 0.0),
                                       child: Text(
-                                        'Edit Pit Record',
+                                        FFLocalizations.of(context).getText(
+                                          '3eic70oe' /* Edit Pit Record */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -157,7 +207,9 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Team number#',
+                                          FFLocalizations.of(context).getText(
+                                            '30eaho5m' /* Team number# */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -193,7 +245,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                       fontFamily: 'Inter',
                                                       letterSpacing: 0.0,
                                                     ),
-                                            hintText: 'e.g. 19666',
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'd9a2tmrm' /* e.g. 19666 */,
+                                            ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -272,7 +328,9 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Expect Automatons',
+                                          FFLocalizations.of(context).getText(
+                                            'wz9o5qsz' /* Expect Automatons */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -320,7 +378,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'High Basket',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'ehewlruc' /* High Basket */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -448,7 +510,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'Low Basket',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '6l7bri82' /* Low Basket */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -576,7 +642,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'High Chember',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'js9nv2nh' /* High Chember */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -704,7 +774,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'Low Chember',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'hfspn3rj' /* Low Chember */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -832,7 +906,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'Net',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'exotoj15' /* Net */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -940,7 +1018,9 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Expect Automatons Endgame',
+                                          FFLocalizations.of(context).getText(
+                                            'ap5gmex2' /* Expect Automatons Endgame */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -963,10 +1043,16 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                               editpitsoutPitscoutlistRow
                                                   ?.expautoendgamepos,
                                         ),
-                                        options: const [
-                                          'Observation Zone',
-                                          'Level 1 Ascent',
-                                          'None'
+                                        options: [
+                                          FFLocalizations.of(context).getText(
+                                            'y6evkom5' /* Observation Zone */,
+                                          ),
+                                          FFLocalizations.of(context).getText(
+                                            'kl0m8n7e' /* Level 1 Ascent */,
+                                          ),
+                                          FFLocalizations.of(context).getText(
+                                            '0p1dodlz' /* None */,
+                                          )
                                         ],
                                         onChanged: (val) => safeSetState(() =>
                                             _model.autoendgameValue = val),
@@ -978,7 +1064,10 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                               fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
-                                        hintText: 'Select...',
+                                        hintText:
+                                            FFLocalizations.of(context).getText(
+                                          'xkpntgkj' /* Select... */,
+                                        ),
                                         icon: Icon(
                                           Icons.keyboard_arrow_down_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -1008,7 +1097,9 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Expect Teleop',
+                                          FFLocalizations.of(context).getText(
+                                            'bt6tqha2' /* Expect Teleop */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -1056,7 +1147,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'High Basket',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'r61ve3u1' /* High Basket */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1184,7 +1279,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'Low Basket',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'w4pgdxuz' /* Low Basket */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1312,7 +1411,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'High Chember',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'xtflszrr' /* High Chember */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1440,7 +1543,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'Low Chember',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'lesnln07' /* Low Chember */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1568,7 +1675,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                         const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
-                                                      'Net',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'oxluoyc2' /* Net */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1676,7 +1787,9 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Expect Teleop Endgame',
+                                          FFLocalizations.of(context).getText(
+                                            'dihzecle' /* Expect Teleop Endgame */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -1699,12 +1812,22 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                               editpitsoutPitscoutlistRow
                                                   ?.expteleopendgamepos,
                                         ),
-                                        options: const [
-                                          'Observation Zone',
-                                          'Level 1 Ascent',
-                                          'Level 2 Ascent',
-                                          'Level 3 Ascent',
-                                          'None'
+                                        options: [
+                                          FFLocalizations.of(context).getText(
+                                            '0tn4sdcg' /* Observation Zone */,
+                                          ),
+                                          FFLocalizations.of(context).getText(
+                                            'njqmskz7' /* Level 1 Ascent */,
+                                          ),
+                                          FFLocalizations.of(context).getText(
+                                            '69t9kbwx' /* Level 2 Ascent */,
+                                          ),
+                                          FFLocalizations.of(context).getText(
+                                            'xxfdy4b6' /* Level 3 Ascent */,
+                                          ),
+                                          FFLocalizations.of(context).getText(
+                                            'b63i8v5y' /* None */,
+                                          )
                                         ],
                                         onChanged: (val) => safeSetState(() =>
                                             _model.teleopendgameValue = val),
@@ -1716,7 +1839,10 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                               fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
-                                        hintText: 'Select...',
+                                        hintText:
+                                            FFLocalizations.of(context).getText(
+                                          'omoxvyjd' /* Select... */,
+                                        ),
                                         icon: Icon(
                                           Icons.keyboard_arrow_down_rounded,
                                           color: FlutterFlowTheme.of(context)
@@ -1746,7 +1872,9 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Robot Picture',
+                                          FFLocalizations.of(context).getText(
+                                            'srouhw5g' /* Robot Picture */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -1896,7 +2024,9 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Comments',
+                                          FFLocalizations.of(context).getText(
+                                            'tgs8wx0d' /* Comments */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -1936,7 +2066,11 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                               .primaryText,
                                                       letterSpacing: 0.0,
                                                     ),
-                                            hintText: 'TextField',
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              '04hho18t' /* TextField */,
+                                            ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -2131,7 +2265,10 @@ class _EditpitsoutWidgetState extends State<EditpitsoutWidget> {
                                                 },
                                               );
                                             },
-                                            text: 'Update',
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              'bo0dg5si' /* Update */,
+                                            ),
                                             options: FFButtonOptions(
                                               width: double.infinity,
                                               height: 40.0,

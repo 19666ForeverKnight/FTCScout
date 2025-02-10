@@ -119,7 +119,7 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              20.0, 0.0, 20.0, 0.0),
+                              20.0, 10.0, 20.0, 10.0),
                           child: Container(
                             width: double.infinity,
                             height: 100.0,
@@ -177,7 +177,9 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                         alignment:
                                             const AlignmentDirectional(-1.0, 0.0),
                                         child: Text(
-                                          'Team Details',
+                                          FFLocalizations.of(context).getText(
+                                            'icjzb93e' /* Team Details */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -230,7 +232,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                   },
                                                 );
                                               },
-                                              text: 'Edit',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'kcebs5e2' /* Edit */,
+                                              ),
                                               options: FFButtonOptions(
                                                 width: 60.0,
                                                 height: 40.0,
@@ -323,7 +328,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                       const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
-                                                    'Profile',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      '8wj8xen4' /* Profile */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
@@ -380,7 +388,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                       const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
-                                                    'Matchs Insight',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      '4dhkbvvp' /* Matchs Insight */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
@@ -411,7 +422,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Team number#',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'fcndswwo' /* Team number# */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -452,7 +466,12 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                           fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
-                                                    hintText: 'e.g. 19666',
+                                                    hintText:
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                      'a4zzl0tq' /* e.g. 19666 */,
+                                                    ),
                                                     hintStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .labelMedium
@@ -546,7 +565,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Expect Automatons',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'wz9o5qsz' /* Expect Automatons */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -605,7 +627,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'High Basket',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'bxjxd76a' /* High Basket */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -701,7 +727,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'Low Basket',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'sybr8k5q' /* Low Basket */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -797,7 +827,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'High Chember',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'g0x75ydz' /* High Chember */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -893,7 +927,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'Low Chember',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'e3y1sov5' /* Low Chember */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -989,7 +1027,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'Net',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                '4tvygal6' /* Net */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -1057,7 +1099,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Expect Automatons Endgame',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'ap5gmex2' /* Expect Automatons Endgame */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1083,10 +1128,19 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                       teamdetailsPitscoutlistRow
                                                           ?.expautoendgamepos,
                                                 ),
-                                                options: const [
-                                                  'Observation Zone',
-                                                  'Level 1 Ascent',
-                                                  'None'
+                                                options: [
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'uckjw3to' /* Observation Zone */,
+                                                  ),
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '2ecym3d3' /* Level 1 Ascent */,
+                                                  ),
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'wzy3xkte' /* None */,
+                                                  )
                                                 ],
                                                 onChanged: (val) =>
                                                     safeSetState(() => _model
@@ -1101,7 +1155,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                           fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
-                                                hintText: 'Select...',
+                                                hintText:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  '62onrnx4' /* Select... */,
+                                                ),
                                                 icon: Icon(
                                                   Icons
                                                       .keyboard_arrow_down_rounded,
@@ -1137,7 +1195,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Expect Teleop',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'bt6tqha2' /* Expect Teleop */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1196,7 +1257,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'High Basket',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                '1tqt1mgr' /* High Basket */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -1292,7 +1357,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'Low Basket',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'miwssve3' /* Low Basket */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -1388,7 +1457,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'High Chember',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'q1y47tac' /* High Chember */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -1484,7 +1557,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'Low Chember',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'l3u7jcqf' /* Low Chember */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -1580,7 +1657,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                 const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
-                                                              'Net',
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'zopj47sm' /* Net */,
+                                                              ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -1648,7 +1729,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Expect Teleop Endgame',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'dihzecle' /* Expect Teleop Endgame */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1674,12 +1758,27 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                       teamdetailsPitscoutlistRow
                                                           ?.expteleopendgamepos,
                                                 ),
-                                                options: const [
-                                                  'Observation Zone',
-                                                  'Level 1 Ascent',
-                                                  'Level 2 Ascent',
-                                                  'Level 3 Ascent',
-                                                  'None'
+                                                options: [
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'zvypjcur' /* Observation Zone */,
+                                                  ),
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '2kvj7ylf' /* Level 1 Ascent */,
+                                                  ),
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'knqw7u1n' /* Level 2 Ascent */,
+                                                  ),
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'nq6zc76m' /* Level 3 Ascent */,
+                                                  ),
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'rrs6nazf' /* None */,
+                                                  )
                                                 ],
                                                 onChanged: (val) =>
                                                     safeSetState(() => _model
@@ -1694,7 +1793,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                           fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
-                                                hintText: 'Select...',
+                                                hintText:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'y5porqo4' /* Select... */,
+                                                ),
                                                 icon: Icon(
                                                   Icons
                                                       .keyboard_arrow_down_rounded,
@@ -1730,7 +1833,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Robot Picture',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'srouhw5g' /* Robot Picture */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1810,7 +1916,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Comments',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'o92ije0n' /* Comments */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1854,7 +1963,12 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                               .primaryText,
                                                           letterSpacing: 0.0,
                                                         ),
-                                                    hintText: 'TextField',
+                                                    hintText:
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                      'qtv7n74k' /* TextField */,
+                                                    ),
                                                     hintStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .labelMedium
@@ -1953,7 +2067,10 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Overall Statistic',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'nim2623x' /* Overall Statistic */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -2012,7 +2129,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Mean Auto',
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'qmap3j60' /* Mean Auto */,
+                                                            ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -2146,7 +2267,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Mean Teleop',
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                            'bkdtacpb' /* Mean Teleop */,
+                                                          ),
                                                           textAlign:
                                                               TextAlign.center,
                                                           style: FlutterFlowTheme
@@ -2284,7 +2409,11 @@ class _TeamdetailsWidgetState extends State<TeamdetailsWidget> {
                                                                     0.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Mean Total',
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                            '7hy7us8t' /* Mean Total */,
+                                                          ),
                                                           textAlign:
                                                               TextAlign.center,
                                                           style: FlutterFlowTheme

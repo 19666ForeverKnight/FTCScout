@@ -55,23 +55,22 @@ class _AddeventWidgetState extends State<AddeventWidget> {
           top: true,
           child: Align(
             alignment: const AlignmentDirectional(0.0, 0.0),
-            child: Flex(
-              direction: Axis.vertical,
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 30.0),
+            child: Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+              child: Flex(
+                direction: Axis.vertical,
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 0.0, 20.0, 0.0),
+                                20.0, 10.0, 20.0, 10.0),
                             child: Container(
                               width: double.infinity,
                               height: 100.0,
@@ -88,9 +87,41 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                   children: [
                                     Align(
                                       alignment:
+                                          const AlignmentDirectional(-1.0, -1.0),
+                                      child: InkWell(
+                                        splashColor: Colors.transparent,
+                                        focusColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        onTap: () async {
+                                          context.pushNamed(
+                                            'home',
+                                            extra: <String, dynamic>{
+                                              kTransitionInfoKey:
+                                                  const TransitionInfo(
+                                                hasTransition: true,
+                                                transitionType:
+                                                    PageTransitionType
+                                                        .leftToRight,
+                                              ),
+                                            },
+                                          );
+                                        },
+                                        child: Icon(
+                                          Icons.arrow_back,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          size: 30.0,
+                                        ),
+                                      ),
+                                    ),
+                                    Align(
+                                      alignment:
                                           const AlignmentDirectional(-1.0, 0.0),
                                       child: Text(
-                                        'Add Event',
+                                        FFLocalizations.of(context).getText(
+                                          '28zbaldl' /* Add Event */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -108,7 +139,9 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
-                                          'Event Name',
+                                          FFLocalizations.of(context).getText(
+                                            'fmckl3mq' /* Event Name */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -144,7 +177,10 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintText:
-                                                  'e.g. Shanghai #3 Qualifier',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                'l21mqf98' /* e.g. Shanghai #3 Qualifier */,
+                                              ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
@@ -219,7 +255,9 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 15.0, 0.0, 0.0),
                                         child: Text(
-                                          'Event Code',
+                                          FFLocalizations.of(context).getText(
+                                            '7mxpj7po' /* Event Code */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -229,6 +267,22 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                                 fontWeight: FontWeight.w600,
                                               ),
                                         ),
+                                      ),
+                                    ),
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          'ypsecklw' /* * Fill in this correctly for a... */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Inter',
+                                              fontSize: 10.0,
+                                              letterSpacing: 0.0,
+                                            ),
                                       ),
                                     ),
                                     Align(
@@ -254,7 +308,11 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                                         fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
-                                              hintText: 'e.g. CNSHQ3',
+                                              hintText:
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                'i0a54bip' /* e.g. CNSHQ3 */,
+                                              ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
@@ -329,7 +387,9 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 15.0, 0.0, 0.0),
                                         child: Text(
-                                          'Date',
+                                          FFLocalizations.of(context).getText(
+                                            '4o7fjd76' /* Date */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -404,6 +464,8 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                                                     fontFamily: 'Inter',
                                                     letterSpacing: 0.0,
                                                   ),
+                                          locale: FFLocalizations.of(context)
+                                              .languageCode,
                                         ),
                                       ),
                                     ),
@@ -428,7 +490,10 @@ class _AddeventWidgetState extends State<AddeventWidget> {
 
                                             context.pushNamed('home');
                                           },
-                                          text: 'Add',
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'u439sgkp' /* Add */,
+                                          ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
                                             height: 40.0,
@@ -464,8 +529,8 @@ class _AddeventWidgetState extends State<AddeventWidget> {
                       ],
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),

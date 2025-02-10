@@ -8,6 +8,14 @@ class EditmatchscoutModel extends FlutterFlowModel<EditmatchscoutWidget> {
 
   String? alliencecolor;
 
+  bool firsttime = true;
+
+  int? at;
+
+  int? tt;
+
+  int? total;
+
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for compnum widget.
@@ -66,4 +74,7 @@ class EditmatchscoutModel extends FlutterFlowModel<EditmatchscoutWidget> {
     commentFocusNode?.dispose();
     commentTextController?.dispose();
   }
+
+  /// Action blocks.
+  Future autototal(BuildContext context) async {}
 }

@@ -119,7 +119,9 @@ class _SignupWidgetState extends State<SignupWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Create an account',
+                                      FFLocalizations.of(context).getText(
+                                        '11bhcx4e' /* Create an account */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineLarge
                                           .override(
@@ -131,7 +133,9 @@ class _SignupWidgetState extends State<SignupWidget> {
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 24.0),
                                       child: Text(
-                                        'Create an FTC scout account!',
+                                        FFLocalizations.of(context).getText(
+                                          'ym9h34yo' /* Create an FTC Scout account! */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -154,7 +158,11 @@ class _SignupWidgetState extends State<SignupWidget> {
                                           autofillHints: const [AutofillHints.email],
                                           obscureText: false,
                                           decoration: InputDecoration(
-                                            labelText: 'Email',
+                                            labelText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'ng5csdft' /* Email */,
+                                            ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -238,7 +246,11 @@ class _SignupWidgetState extends State<SignupWidget> {
                                           obscureText:
                                               !_model.passwordVisibility,
                                           decoration: InputDecoration(
-                                            labelText: 'Password',
+                                            labelText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'smjego8g' /* Password */,
+                                            ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -340,7 +352,11 @@ class _SignupWidgetState extends State<SignupWidget> {
                                           obscureText:
                                               !_model.passwordConfirmVisibility,
                                           decoration: InputDecoration(
-                                            labelText: 'Confirm Password',
+                                            labelText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'aylcp631' /* Confirm Password */,
+                                            ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -464,7 +480,10 @@ class _SignupWidgetState extends State<SignupWidget> {
                                           context.goNamedAuth(
                                               'home', context.mounted);
                                         },
-                                        text: 'Create Account',
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          'm4ncxni6' /* Create Account */,
+                                        ),
                                         options: FFButtonOptions(
                                           width: double.infinity,
                                           height: 44.0,
@@ -518,13 +537,20 @@ class _SignupWidgetState extends State<SignupWidget> {
                                                 .textScaler,
                                             text: TextSpan(
                                               children: [
-                                                const TextSpan(
-                                                  text:
-                                                      'Already have an account? ',
-                                                  style: TextStyle(),
+                                                TextSpan(
+                                                  text: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'hqg7elvu' /* Already have an account?  */,
+                                                  ),
+                                                  style: const TextStyle(),
                                                 ),
                                                 TextSpan(
-                                                  text: ' Sign In here',
+                                                  text: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    '4zfguqaq' /*  Sign In here */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -658,7 +684,10 @@ class _SignupWidgetState extends State<SignupWidget> {
                                                 ),
                                               ),
                                               Text(
-                                                'UserName',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'u9tgsbkw' /* UserName */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
@@ -676,7 +705,10 @@ class _SignupWidgetState extends State<SignupWidget> {
                                                 CrossAxisAlignment.end,
                                             children: [
                                               Text(
-                                                'Overall',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'by8qd0tj' /* Overall */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall
@@ -694,7 +726,11 @@ class _SignupWidgetState extends State<SignupWidget> {
                                                             .fromSTEB(0.0, 0.0,
                                                                 4.0, 0.0),
                                                     child: Text(
-                                                      '5',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'qdsw5xyp' /* 5 */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .headlineMedium
@@ -727,7 +763,10 @@ class _SignupWidgetState extends State<SignupWidget> {
                                         children: [
                                           Expanded(
                                             child: AutoSizeText(
-                                              'Nice outdoor courts, solid concrete and good hoops for the neighborhood.',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'va0jhbp7' /* Nice outdoor courts, solid con... */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium

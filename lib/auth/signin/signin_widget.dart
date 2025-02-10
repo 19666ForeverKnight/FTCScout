@@ -116,7 +116,9 @@ class _SigninWidgetState extends State<SigninWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Login in',
+                                      FFLocalizations.of(context).getText(
+                                        'z60ejpsy' /* Login */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineLarge
                                           .override(
@@ -128,7 +130,9 @@ class _SigninWidgetState extends State<SigninWidget> {
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 24.0),
                                       child: Text(
-                                        'Login in to your FTC Scout account',
+                                        FFLocalizations.of(context).getText(
+                                          'hmjb9zjw' /* Login to your FTC Scout accoun... */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -151,7 +155,11 @@ class _SigninWidgetState extends State<SigninWidget> {
                                           autofillHints: const [AutofillHints.email],
                                           obscureText: false,
                                           decoration: InputDecoration(
-                                            labelText: 'Email',
+                                            labelText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              '6vcqap1w' /* Email */,
+                                            ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -235,7 +243,11 @@ class _SigninWidgetState extends State<SigninWidget> {
                                           obscureText:
                                               !_model.passwordVisibility,
                                           decoration: InputDecoration(
-                                            labelText: 'Password',
+                                            labelText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              '11frehvv' /* Password */,
+                                            ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -342,7 +354,10 @@ class _SigninWidgetState extends State<SigninWidget> {
                                           context.goNamedAuth(
                                               'home', context.mounted);
                                         },
-                                        text: 'Login In',
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          'w0cfacll' /* Login In */,
+                                        ),
                                         options: FFButtonOptions(
                                           width: double.infinity,
                                           height: 44.0,
@@ -396,13 +411,20 @@ class _SigninWidgetState extends State<SigninWidget> {
                                                 .textScaler,
                                             text: TextSpan(
                                               children: [
-                                                const TextSpan(
-                                                  text:
-                                                      'Don\'t have an account?',
-                                                  style: TextStyle(),
+                                                TextSpan(
+                                                  text: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'r8epvefs' /* Don't have an account? */,
+                                                  ),
+                                                  style: const TextStyle(),
                                                 ),
                                                 TextSpan(
-                                                  text: ' Sign Up here',
+                                                  text: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'aubg9jjq' /*  Sign Up here */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -536,7 +558,10 @@ class _SigninWidgetState extends State<SigninWidget> {
                                                 ),
                                               ),
                                               Text(
-                                                'UserName',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'dhvobhj1' /* UserName */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
@@ -554,7 +579,10 @@ class _SigninWidgetState extends State<SigninWidget> {
                                                 CrossAxisAlignment.end,
                                             children: [
                                               Text(
-                                                'Overall',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'c3tb6b66' /* Overall */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall
@@ -572,7 +600,11 @@ class _SigninWidgetState extends State<SigninWidget> {
                                                             .fromSTEB(0.0, 0.0,
                                                                 4.0, 0.0),
                                                     child: Text(
-                                                      '5',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'g9lxv5hk' /* 5 */,
+                                                      ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .headlineMedium
@@ -605,7 +637,10 @@ class _SigninWidgetState extends State<SigninWidget> {
                                         children: [
                                           Expanded(
                                             child: AutoSizeText(
-                                              'Nice outdoor courts, solid concrete and good hoops for the neighborhood.',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '40ac0tj1' /* Nice outdoor courts, solid con... */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium

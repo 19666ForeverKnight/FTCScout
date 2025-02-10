@@ -78,8 +78,8 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          20.0, 10.0, 20.0, 10.0),
                       child: Container(
                         width: double.infinity,
                         height: 100.0,
@@ -95,9 +95,48 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed(
+                                        'pitscouthome',
+                                        queryParameters: {
+                                          'eventid': serializeParam(
+                                            widget.eventid,
+                                            ParamType.int,
+                                          ),
+                                          'eventname': serializeParam(
+                                            widget.eventname,
+                                            ParamType.String,
+                                          ),
+                                        }.withoutNulls,
+                                        extra: <String, dynamic>{
+                                          kTransitionInfoKey: const TransitionInfo(
+                                            hasTransition: true,
+                                            transitionType:
+                                                PageTransitionType.leftToRight,
+                                          ),
+                                        },
+                                      );
+                                    },
+                                    child: Icon(
+                                      Icons.arrow_back,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      size: 30.0,
+                                    ),
+                                  ),
+                                ),
+                                Align(
                                   alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
-                                    'Add Pit Record',
+                                    FFLocalizations.of(context).getText(
+                                      'xod6h460' /* Add Pit Record */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
@@ -114,7 +153,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Team number#',
+                                      FFLocalizations.of(context).getText(
+                                        'jxz3pjma' /* Team number# */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -143,7 +184,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                               fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
-                                        hintText: 'e.g. 19666',
+                                        hintText:
+                                            FFLocalizations.of(context).getText(
+                                          'e09sg3vq' /* e.g. 19666 */,
+                                        ),
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -214,7 +258,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Expect Automatons',
+                                      FFLocalizations.of(context).getText(
+                                        'fh2c34k1' /* Expect Automatons */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -257,7 +303,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '993cn317' /* High Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -370,7 +419,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'egpoljwu' /* Low Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -483,7 +535,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'rpeictgk' /* High Chember */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -596,7 +651,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'r1t659lm' /* Low Chember */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -709,7 +767,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Net',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'wwvn2o6d' /* Net */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -806,7 +867,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Expect Automatons Endgame',
+                                      FFLocalizations.of(context).getText(
+                                        's694mvsh' /* Expect Automatons Endgame */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -825,12 +888,21 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     controller:
                                         _model.autoendgameValueController ??=
                                             FormFieldController<String>(
-                                      _model.autoendgameValue ??= 'None',
+                                      _model.autoendgameValue ??=
+                                          FFLocalizations.of(context).getText(
+                                        'ggwvbpvj' /* None */,
+                                      ),
                                     ),
-                                    options: const [
-                                      'Observation Zone',
-                                      'Level 1 Ascent',
-                                      'None'
+                                    options: [
+                                      FFLocalizations.of(context).getText(
+                                        '7im0qmdt' /* Observation Zone */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        'pm2ljff7' /* Level 1 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        'm6lbk51d' /* None */,
+                                      )
                                     ],
                                     onChanged: (val) => safeSetState(
                                         () => _model.autoendgameValue = val),
@@ -842,7 +914,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                           fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                         ),
-                                    hintText: 'Select...',
+                                    hintText:
+                                        FFLocalizations.of(context).getText(
+                                      'wiqeidvv' /* Select... */,
+                                    ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
                                       color: FlutterFlowTheme.of(context)
@@ -870,7 +945,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Expect Teleop',
+                                      FFLocalizations.of(context).getText(
+                                        'jg6x6lw4' /* Expect Teleop */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -913,7 +990,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '2purqd9v' /* High Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1026,7 +1106,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'k3y5ivs7' /* Low Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1139,7 +1222,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'ryqebg70' /* High Chember */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1252,7 +1338,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '78fuf0q3' /* Low Chember */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1365,7 +1454,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Net',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '9cdzze0o' /* Net */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1462,7 +1554,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Expect Teleop Endgame',
+                                      FFLocalizations.of(context).getText(
+                                        'jk1313of' /* Expect Teleop Endgame */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -1481,14 +1575,27 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     controller:
                                         _model.teleopendgameValueController ??=
                                             FormFieldController<String>(
-                                      _model.teleopendgameValue ??= 'None',
+                                      _model.teleopendgameValue ??=
+                                          FFLocalizations.of(context).getText(
+                                        'vdp1tcm7' /* None */,
+                                      ),
                                     ),
-                                    options: const [
-                                      'Observation Zone',
-                                      'Level 1 Ascent',
-                                      'Level 2 Ascent',
-                                      'Level 3 Ascent',
-                                      'None'
+                                    options: [
+                                      FFLocalizations.of(context).getText(
+                                        'mld3vjh2' /* Observation Zone */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        'prmctcl5' /* Level 1 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        '3wuahp33' /* Level 2 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        'ahj2zbjm' /* Level 3 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        '4w7c3571' /* None */,
+                                      )
                                     ],
                                     onChanged: (val) => safeSetState(
                                         () => _model.teleopendgameValue = val),
@@ -1500,7 +1607,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                           fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                         ),
-                                    hintText: 'Select...',
+                                    hintText:
+                                        FFLocalizations.of(context).getText(
+                                      '1522t8r6' /* Select... */,
+                                    ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
                                       color: FlutterFlowTheme.of(context)
@@ -1528,7 +1638,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Robot Picture',
+                                      FFLocalizations.of(context).getText(
+                                        's1br9ba1' /* Robot Picture */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -1668,7 +1780,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Comments',
+                                      FFLocalizations.of(context).getText(
+                                        'iodiv8wk' /* Comments */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -1701,7 +1815,10 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                                       .primaryText,
                                               letterSpacing: 0.0,
                                             ),
-                                        hintText: 'TextField',
+                                        hintText:
+                                            FFLocalizations.of(context).getText(
+                                          'wqqudhp4' /* TextField */,
+                                        ),
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -1815,7 +1932,9 @@ class _AddpitsoutWidgetState extends State<AddpitsoutWidget> {
                                         }.withoutNulls,
                                       );
                                     },
-                                    text: 'Add',
+                                    text: FFLocalizations.of(context).getText(
+                                      'rp6fn6hl' /* Add */,
+                                    ),
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 40.0,

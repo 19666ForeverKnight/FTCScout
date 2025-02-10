@@ -82,11 +82,12 @@ class SearchComplistCall {
     String? searchstring = '',
     String? sortq = '',
     String? uuid = '',
+    int? eventid,
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Search Complist',
       apiUrl:
-          'https://thgjyxwhwbuqpejcrvkg.supabase.co/rest/v1/compscoutlist?teamnumber=ilike.*$searchstring*&user_id=eq.$uuid$sortq',
+          'https://thgjyxwhwbuqpejcrvkg.supabase.co/rest/v1/compscoutlist?teamnumber=ilike.*$searchstring*&user_id=eq.$uuid&eventid=eq.$eventid$sortq',
       callType: ApiCallType.GET,
       headers: {
         'apikey':
@@ -110,11 +111,12 @@ class SearchPitlistCall {
     String? searchstring = '',
     String? sortq = '',
     String? uuid = '',
+    int? eventid,
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Search Pitlist',
       apiUrl:
-          'https://thgjyxwhwbuqpejcrvkg.supabase.co/rest/v1/pitscoutlist?teamnumber=ilike.*$searchstring*&user_id=eq.$uuid$sortq',
+          'https://thgjyxwhwbuqpejcrvkg.supabase.co/rest/v1/pitscoutlist?teamnumber=ilike.*$searchstring*&user_id=eq.$uuid&eventid=eq.$eventid$sortq',
       callType: ApiCallType.GET,
       headers: {
         'apikey':

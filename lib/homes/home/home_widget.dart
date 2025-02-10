@@ -1,6 +1,7 @@
 import '/auth/supabase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -187,7 +188,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     Expanded(
                                       flex: 8,
                                       child: Text(
-                                        'Update Password',
+                                        FFLocalizations.of(context).getText(
+                                          '8s0b8x80' /* Update Password */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -237,7 +240,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     Expanded(
                                       flex: 8,
                                       child: Text(
-                                        'Sign Out',
+                                        FFLocalizations.of(context).getText(
+                                          '9rpx4ycc' /* Sign Out */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -282,7 +287,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     Expanded(
                                       flex: 8,
                                       child: Text(
-                                        'About',
+                                        FFLocalizations.of(context).getText(
+                                          'wkqbvcxn' /* About */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -294,6 +301,51 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       ),
                                     ),
                                   ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 10.0, 0.0, 0.0),
+                              child: Container(
+                                width: double.infinity,
+                                height: 50.0,
+                                decoration: BoxDecoration(
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 0.0, 10.0, 0.0),
+                                  child: FlutterFlowLanguageSelector(
+                                    width: 200.0,
+                                    height: 40.0,
+                                    backgroundColor:
+                                        FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                    borderColor: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    dropdownIconColor:
+                                        FlutterFlowTheme.of(context)
+                                            .secondaryText,
+                                    borderRadius: 8.0,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Inter',
+                                          fontSize: 18.0,
+                                          letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                    hideFlags: false,
+                                    flagSize: 24.0,
+                                    flagTextGap: 8.0,
+                                    currentLanguage: FFLocalizations.of(context)
+                                        .languageCode,
+                                    languages: FFLocalizations.languages(),
+                                    onChanged: (lang) =>
+                                        setAppLanguage(context, lang),
+                                  ),
                                 ),
                               ),
                             ),
@@ -349,7 +401,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 Align(
                                   alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Text(
-                                    'FTC Scout',
+                                    FFLocalizations.of(context).getText(
+                                      'ebu9jxiy' /* FTC Scout */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
@@ -389,7 +443,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Text(
-                                                  'Events',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'q3s6hgqn' /* Events */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -416,7 +473,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                     context
                                                         .pushNamed('addevent');
                                                   },
-                                                  text: '+ Add',
+                                                  text: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'q84bru56' /* + Add */,
+                                                  ),
                                                   options: FFButtonOptions(
                                                     width: 80.0,
                                                     height: 40.0,
@@ -680,8 +741,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         valueOrDefault<
                                                                             String>(
                                                                           dateTimeFormat(
-                                                                              "MMMMEEEEd",
-                                                                              myeventslistItem.eventdate),
+                                                                            "MMMMEEEEd",
+                                                                            myeventslistItem.eventdate,
+                                                                            locale:
+                                                                                FFLocalizations.of(context).languageCode,
+                                                                          ),
                                                                           'null',
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)

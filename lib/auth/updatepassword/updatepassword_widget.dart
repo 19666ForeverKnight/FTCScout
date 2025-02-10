@@ -143,7 +143,9 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                         alignment:
                                             const AlignmentDirectional(-1.0, 0.0),
                                         child: Text(
-                                          'Update Password',
+                                          FFLocalizations.of(context).getText(
+                                            '2dpjb99s' /* Update Password */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -164,7 +166,10 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                               alignment: const AlignmentDirectional(
                                                   -1.0, 1.0),
                                               child: Text(
-                                                'Current Password',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'ex4qozoi' /* Current Password */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -208,7 +213,12 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
-                                                      hintText: 'Password',
+                                                      hintText:
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                        '11frehvv' /* Password */,
+                                                      ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
                                                         borderSide: BorderSide(
@@ -308,7 +318,10 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'New Password',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'n8fzyng1' /* New Password */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -353,7 +366,12 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
-                                                      hintText: 'Password',
+                                                      hintText:
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                        '0kjgneay' /* Password */,
+                                                      ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
                                                         borderSide: BorderSide(
@@ -453,7 +471,10 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Retype your new Password',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'wo7t6gql' /* Retype your new Password */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -498,7 +519,12 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
-                                                      hintText: 'Password',
+                                                      hintText:
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                        '5ozephya' /* Password */,
+                                                      ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
                                                         borderSide: BorderSide(
@@ -609,7 +635,10 @@ class _UpdatepasswordWidgetState extends State<UpdatepasswordWidget> {
                                             context.goNamedAuth(
                                                 'home', context.mounted);
                                           },
-                                          text: 'Update Password',
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'qm3axcy0' /* Update Password */,
+                                          ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
                                             height: 40.0,

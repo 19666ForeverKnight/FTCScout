@@ -56,8 +56,8 @@ class _AboutWidgetState extends State<AboutWidget> {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          20.0, 10.0, 20.0, 10.0),
                       child: Container(
                         width: double.infinity,
                         height: 100.0,
@@ -120,7 +120,9 @@ class _AboutWidgetState extends State<AboutWidget> {
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 0.0),
                                       child: GradientText(
-                                        'FTC Scout',
+                                        FFLocalizations.of(context).getText(
+                                          'smd0yeo5' /* FTC Scout */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -148,7 +150,9 @@ class _AboutWidgetState extends State<AboutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: Text(
-                                          'About the App',
+                                          FFLocalizations.of(context).getText(
+                                            'g9i5ce7a' /* About the App */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -166,7 +170,9 @@ class _AboutWidgetState extends State<AboutWidget> {
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 5.0, 0.0, 0.0),
                                       child: Text(
-                                        'This app is made by Team 19666 and distributed through the Depth Lab Program. Our mission is to empower FIRST Tech Challenge (FTC) teams with an easy-to-use, efficient scouting tool designed to help teams analyze, track, and improve their performance throughout the competition season.',
+                                        FFLocalizations.of(context).getText(
+                                          '588ruv7w' /* This app is made by Team 19666... */,
+                                        ),
                                         textAlign: TextAlign.justify,
                                         style: FlutterFlowTheme.of(context)
                                             .bodySmall
@@ -184,7 +190,9 @@ class _AboutWidgetState extends State<AboutWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: Text(
-                                          'Stay Connected:',
+                                          FFLocalizations.of(context).getText(
+                                            '0cq19l6t' /* Stay Connected: */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -270,7 +278,10 @@ class _AboutWidgetState extends State<AboutWidget> {
                                                       .fromSTEB(
                                                           0.0, 0.0, 5.0, 0.0),
                                                   child: Text(
-                                                    'info@depthlab.us.kg',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'e1m0rfq1' /* info@depthlab.us.kg */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
@@ -290,7 +301,10 @@ class _AboutWidgetState extends State<AboutWidget> {
                                                       .fromSTEB(
                                                           5.0, 0.0, 0.0, 0.0),
                                                   child: Text(
-                                                    'info@ftc19666.org',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      '4bqamap6' /* info@ftc19666.org */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
@@ -318,7 +332,10 @@ class _AboutWidgetState extends State<AboutWidget> {
                                                   MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 Text(
-                                                  'www.depthlab.us.kg',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'ctrvxjge' /* www.depthlab.us.kg */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -332,7 +349,10 @@ class _AboutWidgetState extends State<AboutWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  'ww.ftc19666.org',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'yku030zd' /* www.ftc19666.org */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium

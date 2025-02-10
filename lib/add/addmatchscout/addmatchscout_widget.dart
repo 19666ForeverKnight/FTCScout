@@ -79,8 +79,8 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          20.0, 10.0, 20.0, 10.0),
                       child: Container(
                         width: double.infinity,
                         height: 100.0,
@@ -95,6 +95,43 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
+                                Align(
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed(
+                                        'compscouthome',
+                                        queryParameters: {
+                                          'eventid': serializeParam(
+                                            widget.eventid,
+                                            ParamType.int,
+                                          ),
+                                          'eventname': serializeParam(
+                                            widget.eventname,
+                                            ParamType.String,
+                                          ),
+                                        }.withoutNulls,
+                                        extra: <String, dynamic>{
+                                          kTransitionInfoKey: const TransitionInfo(
+                                            hasTransition: true,
+                                            transitionType:
+                                                PageTransitionType.leftToRight,
+                                          ),
+                                        },
+                                      );
+                                    },
+                                    child: Icon(
+                                      Icons.arrow_back,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      size: 30.0,
+                                    ),
+                                  ),
+                                ),
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -102,7 +139,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                       alignment:
                                           const AlignmentDirectional(-1.0, 0.0),
                                       child: Text(
-                                        'Add Macth Record',
+                                        FFLocalizations.of(context).getText(
+                                          'tc9wnamz' /* Add Macth Record */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -210,7 +249,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 5.0, 0.0, 0.0),
                                     child: Text(
-                                      'Match number#',
+                                      FFLocalizations.of(context).getText(
+                                        'oy3k05d7' /* Match number# */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -244,7 +285,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                     fontFamily: 'Inter',
                                                     letterSpacing: 0.0,
                                                   ),
-                                          hintText: 'e.g. 6',
+                                          hintText: FFLocalizations.of(context)
+                                              .getText(
+                                            'afx6kg0z' /* e.g. 6 */,
+                                          ),
                                           hintStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
@@ -323,7 +367,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Team number#',
+                                      FFLocalizations.of(context).getText(
+                                        'd2x221rq' /* Team number# */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -357,7 +403,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                     fontFamily: 'Inter',
                                                     letterSpacing: 0.0,
                                                   ),
-                                          hintText: 'e.g. 19666',
+                                          hintText: FFLocalizations.of(context)
+                                              .getText(
+                                            'vy6blzad' /* e.g. 19666 */,
+                                          ),
                                           hintStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
@@ -436,7 +485,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Match Type',
+                                      FFLocalizations.of(context).getText(
+                                        'p0d5xait' /* Match Type */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -455,10 +506,16 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     controller:
                                         _model.comtypeValueController ??=
                                             FormFieldController<String>(null),
-                                    options: const [
-                                      'Qualifications',
-                                      'Playoffs',
-                                      'Practice'
+                                    options: [
+                                      FFLocalizations.of(context).getText(
+                                        'txower0i' /* Qualifications */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        'k5jqcdkv' /* Playoffs */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        't8lask9j' /* Practice */,
+                                      )
                                     ],
                                     onChanged: (val) => safeSetState(
                                         () => _model.comtypeValue = val),
@@ -470,7 +527,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                           fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                         ),
-                                    hintText: 'Select...',
+                                    hintText:
+                                        FFLocalizations.of(context).getText(
+                                      'dtj9ek60' /* Select... */,
+                                    ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
                                       color: FlutterFlowTheme.of(context)
@@ -498,7 +558,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Alliance Color',
+                                      FFLocalizations.of(context).getText(
+                                        'iel2gww8' /* Alliance Color */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -533,7 +595,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                               _model.alliencecolor = 'red';
                                               safeSetState(() {});
                                             },
-                                            text: 'Red',
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              '1wmsoayh' /* Red */,
+                                            ),
                                             options: FFButtonOptions(
                                               height: 40.0,
                                               padding: const EdgeInsetsDirectional
@@ -574,7 +639,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                               _model.alliencecolor = 'blue';
                                               safeSetState(() {});
                                             },
-                                            text: 'Blue',
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              'arhrp87o' /* Blue */,
+                                            ),
                                             options: FFButtonOptions(
                                               height: 40.0,
                                               padding: const EdgeInsetsDirectional
@@ -626,7 +694,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 10.0, 0.0, 0.0),
                                           child: Text(
-                                            'Automatons',
+                                            FFLocalizations.of(context).getText(
+                                              'mx57bois' /* Automatons */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -722,7 +792,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'wvxgrtxn' /* High Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -835,7 +908,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'ajb1p3wv' /* Low Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -948,7 +1024,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'hjep03kd' /* High Chamber */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1061,7 +1140,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'hhki7uaf' /* Low Chamber */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1174,7 +1256,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Net',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '7a7zy61i' /* Net */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1271,7 +1356,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Automatons Endgame',
+                                      FFLocalizations.of(context).getText(
+                                        'pgd3pwav' /* Automatons Endgame */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -1290,12 +1377,21 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     controller:
                                         _model.autoendgameValueController ??=
                                             FormFieldController<String>(
-                                      _model.autoendgameValue ??= 'None',
+                                      _model.autoendgameValue ??=
+                                          FFLocalizations.of(context).getText(
+                                        't69ywb0i' /* None */,
+                                      ),
                                     ),
-                                    options: const [
-                                      'Observation Zone',
-                                      'Level 1 Ascent',
-                                      'None'
+                                    options: [
+                                      FFLocalizations.of(context).getText(
+                                        'zky8jos3' /* Observation Zone */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        '1lm1yk3t' /* Level 1 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        't064w3nw' /* None */,
+                                      )
                                     ],
                                     onChanged: (val) => safeSetState(
                                         () => _model.autoendgameValue = val),
@@ -1307,7 +1403,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                           fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                         ),
-                                    hintText: 'Select...',
+                                    hintText:
+                                        FFLocalizations.of(context).getText(
+                                      '8lt4gq2o' /* Select... */,
+                                    ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
                                       color: FlutterFlowTheme.of(context)
@@ -1343,7 +1442,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 10.0, 0.0, 0.0),
                                           child: Text(
-                                            'Teleop',
+                                            FFLocalizations.of(context).getText(
+                                              'a5gsyieo' /* Teleop */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -1440,7 +1541,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'cum2tniw' /* High Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1553,7 +1657,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Basket',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'chlr8or5' /* Low Basket */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1666,7 +1773,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'High Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'ue5dngyy' /* High Chamber */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1779,7 +1889,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Low Chember',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    's0tzf8ln' /* Low Chember */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1892,7 +2005,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                 alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Text(
-                                                  'Net',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'saer786x' /* Net */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -1989,7 +2105,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Teleop Endgame',
+                                      FFLocalizations.of(context).getText(
+                                        'qqbo13zd' /* Teleop Endgame */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -2008,14 +2126,27 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     controller:
                                         _model.teleopendgameValueController ??=
                                             FormFieldController<String>(
-                                      _model.teleopendgameValue ??= 'None',
+                                      _model.teleopendgameValue ??=
+                                          FFLocalizations.of(context).getText(
+                                        'slq7t15s' /* None */,
+                                      ),
                                     ),
-                                    options: const [
-                                      'Observation Zone',
-                                      'Level 1 Ascent',
-                                      'Level 2 Ascent',
-                                      'Level 3 Ascent',
-                                      'None'
+                                    options: [
+                                      FFLocalizations.of(context).getText(
+                                        '4yjboerc' /* Observation Zone */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        '1235x8cz' /* Level 1 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        '9uuguyyv' /* Level 2 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        'orbfuxx3' /* Level 3 Ascent */,
+                                      ),
+                                      FFLocalizations.of(context).getText(
+                                        'blp6cu4j' /* None */,
+                                      )
                                     ],
                                     onChanged: (val) => safeSetState(
                                         () => _model.teleopendgameValue = val),
@@ -2027,7 +2158,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                           fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                         ),
-                                    hintText: 'Select...',
+                                    hintText:
+                                        FFLocalizations.of(context).getText(
+                                      '2reb4q0u' /* Select... */,
+                                    ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
                                       color: FlutterFlowTheme.of(context)
@@ -2055,7 +2189,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Text(
-                                      'Comments',
+                                      FFLocalizations.of(context).getText(
+                                        'e7wehs25' /* Comments */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -2088,7 +2224,10 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                                       .primaryText,
                                               letterSpacing: 0.0,
                                             ),
-                                        hintText: 'TextField',
+                                        hintText:
+                                            FFLocalizations.of(context).getText(
+                                          '9i9hq9zb' /* TextField */,
+                                        ),
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -2291,7 +2430,9 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                         }.withoutNulls,
                                       );
                                     },
-                                    text: 'Add',
+                                    text: FFLocalizations.of(context).getText(
+                                      'rp6fn6hl' /* Add */,
+                                    ),
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 40.0,
