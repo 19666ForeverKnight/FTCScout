@@ -923,26 +923,28 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                                         ),
                                                                       ),
                                                                     ),
-                                                                    Flexible(
-                                                                      child:
-                                                                          Text(
-                                                                        valueOrDefault<
-                                                                            String>(
-                                                                          getJsonField(
-                                                                            matchlistItem,
-                                                                            r'''$.teamnumber''',
-                                                                          )?.toString(),
-                                                                          'null',
-                                                                        ),
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              fontFamily: 'Inter',
-                                                                              fontSize: 20.0,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                            ),
+                                                                    Text(
+                                                                      valueOrDefault<
+                                                                          String>(
+                                                                        getJsonField(
+                                                                          matchlistItem,
+                                                                          r'''$.teamnumber''',
+                                                                        )?.toString(),
+                                                                        'null',
                                                                       ),
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Inter',
+                                                                            fontSize:
+                                                                                20.0,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w600,
+                                                                          ),
                                                                     ),
                                                                     Flexible(
                                                                       child:
