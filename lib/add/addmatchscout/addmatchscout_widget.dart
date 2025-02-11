@@ -152,96 +152,91 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                             ),
                                       ),
                                     ),
-                                    Expanded(
-                                      child: Align(
-                                        alignment:
-                                            const AlignmentDirectional(1.0, 0.0),
-                                        child: Text(
-                                          valueOrDefault<String>(
-                                            (valueOrDefault<int>(
-                                                      functions.calautototal(
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .autohighbasketValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .autolowbasketValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model.autonetValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .autohighchemberValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .autolowchemberValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<
-                                                              String>(
-                                                            _model
-                                                                .autoendgameValue,
-                                                            'None',
-                                                          )),
-                                                      0,
-                                                    ) +
-                                                    valueOrDefault<int>(
-                                                      functions.calteleoptotal(
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .teleophighbasketValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .teleoplowbasketValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .teleopnetValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .teleophighchemberValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<int>(
-                                                            _model
-                                                                .teleoplowchemberValue,
-                                                            0,
-                                                          ),
-                                                          valueOrDefault<
-                                                              String>(
-                                                            _model
-                                                                .teleopendgameValue,
-                                                            'None',
-                                                          )),
-                                                      0,
-                                                    ))
-                                                .toString(),
-                                            '0',
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Inter',
-                                                fontSize: 40.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w600,
-                                              ),
-                                        ),
-                                      ),
-                                    ),
                                   ],
+                                ),
+                                Expanded(
+                                  child: Align(
+                                    alignment: const AlignmentDirectional(1.0, 0.0),
+                                    child: Text(
+                                      valueOrDefault<String>(
+                                        (valueOrDefault<int>(
+                                                  functions.calautototal(
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .autohighbasketValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .autolowbasketValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model.autonetValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .autohighchemberValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .autolowchemberValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<String>(
+                                                        _model.autoendgameValue,
+                                                        'None',
+                                                      )),
+                                                  0,
+                                                ) +
+                                                valueOrDefault<int>(
+                                                  functions.calteleoptotal(
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .teleophighbasketValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .teleoplowbasketValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model.teleopnetValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .teleophighchemberValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<int>(
+                                                        _model
+                                                            .teleoplowchemberValue,
+                                                        0,
+                                                      ),
+                                                      valueOrDefault<String>(
+                                                        _model
+                                                            .teleopendgameValue,
+                                                        'None',
+                                                      )),
+                                                  0,
+                                                ))
+                                            .toString(),
+                                        '0',
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Inter',
+                                            fontSize: 40.0,
+                                            letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                                 Align(
                                   alignment: const AlignmentDirectional(-1.0, 0.0),
