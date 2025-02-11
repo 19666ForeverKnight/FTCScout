@@ -325,7 +325,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // addmatchscout
   {
     'tc9wnamz': {
-      'en': 'Add Macth Record',
+      'en': 'Add Match Record',
       'zh_Hans': '添加比赛记录',
     },
     'oy3k05d7': {
@@ -682,7 +682,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // editmatchscout
   {
     'w26ulv25': {
-      'en': 'Edit Macth Record',
+      'en': 'Edit Match Record',
       'zh_Hans': '编辑比赛记录',
     },
     'behn244d': {

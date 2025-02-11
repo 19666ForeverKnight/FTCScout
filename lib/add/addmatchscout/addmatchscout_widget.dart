@@ -140,7 +140,7 @@ class _AddmatchscoutWidgetState extends State<AddmatchscoutWidget> {
                                           const AlignmentDirectional(-1.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'tc9wnamz' /* Add Macth Record */,
+                                          'tc9wnamz' /* Add Match Record */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium

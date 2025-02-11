@@ -97,15 +97,15 @@ String? convertdropdownsorttosearchquary(
     return "";
   } else if (sortdirection == "Descending") {
     if (sorttype == "Auto") {
-      return ",autototal&order=autototal.desc";
+      return "&order=autototal.desc";
     } else {
-      return ",teleoptotal&order=teleoptotal.desc";
+      return "&order=teleoptotal.desc";
     }
   } else {
     if (sorttype == "Auto") {
-      return ",autototal&order=autototal.asc";
+      return "&order=autototal.asc";
     } else {
-      return ",teleoptotal&order=teleoptotal.asc";
+      return "&order=teleoptotal.asc";
     }
   }
 }

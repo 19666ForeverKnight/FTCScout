@@ -190,7 +190,7 @@ class _EditmatchscoutWidgetState extends State<EditmatchscoutWidget> {
                                           const AlignmentDirectional(-1.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'w26ulv25' /* Edit Macth Record */,
+                                          'w26ulv25' /* Edit Match Record */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
