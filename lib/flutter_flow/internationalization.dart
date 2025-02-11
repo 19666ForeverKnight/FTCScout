@@ -540,16 +540,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hans': '搜索...',
     },
     '9fw3ngnu': {
-      'en': 'None',
-      'zh_Hans': '没有',
+      'en': 'Auto Sample',
+      'zh_Hans': '自动标本',
     },
     'v7s2jqin': {
-      'en': 'Auto',
-      'zh_Hans': '自动',
+      'en': 'Auto Spec',
+      'zh_Hans': '自动样本',
     },
     '4rfjws3m': {
-      'en': 'Teleop',
-      'zh_Hans': '手动',
+      'en': 'Teleop Sample',
+      'zh_Hans': '手动标本',
+    },
+    '2jqib60q': {
+      'en': 'Teleop Spec',
+      'zh_Hans': '手动样本',
+    },
+    'yh6zge31': {
+      'en': 'None',
+      'zh_Hans': '没有',
     },
     'hxp0jgno': {
       'en': 'Descending',
@@ -620,7 +628,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'kckxwo04': {
       'en': 'None',
-      'zh_Hans': '没有',
+      'zh_Hans': '自动标本',
     },
     '7r9fqfsj': {
       'en': 'Auto Sample',
@@ -922,7 +930,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'm6lbk51d': {
       'en': 'None',
-      'zh_Hans': '没有',
+      'zh_Hans': '自动标本',
     },
     'jg6x6lw4': {
       'en': 'Expect Teleop',
@@ -1065,7 +1073,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '0p1dodlz': {
       'en': 'None',
-      'zh_Hans': '没有',
+      'zh_Hans': '自动标本',
     },
     'bt6tqha2': {
       'en': 'Expect Teleop',
@@ -1216,7 +1224,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'wzy3xkte': {
       'en': 'None',
-      'zh_Hans': '没有',
+      'zh_Hans': '自动标本',
     },
     'zz4266ia': {
       'en': 'Expect Teleop',

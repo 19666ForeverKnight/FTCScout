@@ -96,16 +96,28 @@ String? convertdropdownsorttosearchquary(
     //return []&order=[sortkey].;
     return "";
   } else if (sortdirection == "Descending") {
-    if (sorttype == "Auto") {
-      return "&order=autototal.desc";
+    if (sorttype == "Auto Sample" || sorttype == "自动标本") {
+      return "&order=autohighbusketsample.desc&order=autolowbusketsample.desc";
+    } else if (sorttype == "Auto Spec" || sorttype == "自动样本") {
+      return "&order=autohighchemberspec.desc&order=autolowchemberspec.desc";
+    } else if (sorttype == "Teleop Sample" || sorttype == "手动标本") {
+      return "&order=teleophighbusketsample.desc&order=teleoplowbusketsample.desc";
+    } else if (sorttype == "Teleop Spec" || sorttype == "手动样本") {
+      return "&order=teleophighchemberspec.desc&order=teleoplowchemberspec.desc";
     } else {
-      return "&order=teleoptotal.desc";
+      return "";
     }
   } else {
-    if (sorttype == "Auto") {
-      return "&order=autototal.asc";
+    if (sorttype == "Auto Sample" || sorttype == "自动标本") {
+      return "&order=autohighbusketsample.asc&order=autolowbusketsample.asc";
+    } else if (sorttype == "Auto Spec" || sorttype == "自动样本") {
+      return "&order=autohighchemberspec.asc&order=autolowchemberspec.asc";
+    } else if (sorttype == "Teleop Sample" || sorttype == "手动标本") {
+      return "&order=teleophighbusketsample.asc&order=teleoplowbusketsample.asc";
+    } else if (sorttype == "Teleop Spec" || sorttype == "手动样本") {
+      return "&order=teleophighchemberspec.asc&order=teleoplowchemberspec.asc";
     } else {
-      return "&order=teleoptotal.asc";
+      return "";
     }
   }
 }

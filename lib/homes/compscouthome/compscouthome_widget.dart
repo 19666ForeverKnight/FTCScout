@@ -499,17 +499,27 @@ class _CompscouthomeWidgetState extends State<CompscouthomeWidget> {
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '9fw3ngnu' /* None */,
+                                                        '9fw3ngnu' /* Auto Sample */,
                                                       ),
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'v7s2jqin' /* Auto */,
+                                                        'v7s2jqin' /* Auto Spec */,
                                                       ),
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '4rfjws3m' /* Teleop */,
+                                                        '4rfjws3m' /* Teleop Sample */,
+                                                      ),
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '2jqib60q' /* Teleop Spec */,
+                                                      ),
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'yh6zge31' /* None */,
                                                       )
                                                     ],
                                                     onChanged: (val) =>
